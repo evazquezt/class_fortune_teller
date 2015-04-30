@@ -10,4 +10,12 @@ class NumbersController < ApplicationController
   def unlucky_numbers
     @numbers = [rand(1..100), rand(1..100), rand(1..100), rand(1..100), rand(1..100)]
   end
+
+  def random
+    # params = {"num"}
+   @the_number = rand(params["num"].to_i)
+  end
+
+
+
 end
